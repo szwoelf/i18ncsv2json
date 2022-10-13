@@ -1,6 +1,6 @@
 {
   "name": "i18ncsv2json-2",
-  "version": "0.9.5-SNAPSHOT.2",
+  "version": "0.9.5-SNAPSHOT.3",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/othree/i18ncsv2json.git"
+    "url": "git@github.com:szwoelf/i18ncsv2json-2.git"
   },
   "author": "othree",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/szwoelf/i18ncsv2json/issues"
   },
-  "homepage": "https://github.com/szwoelf/i18ncsv2json#readme"
+  "homepage": "https://github.com/szwoelf/i18ncsv2json-2#readme"
 }

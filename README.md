@@ -1,5 +1,5 @@
-i18ncsv2json
-============
+i18ncsv2json-2
+==============
 
 i18n csv file to json convetor.
 
@@ -12,7 +12,7 @@ home  | homepage   | Startseite
 
 Execute following command:
 
-    i18ncsv2json tools.csv
+    i18ncsv2json-2 tools.csv
 
 Then will generate 2 files, one is `tools.en.json`:
 
@@ -34,7 +34,7 @@ Multiple files can be provided as arguments.
 
 Execute following command:
  
-    i18ncsv2json tools.csv file.csv
+    i18ncsv2json-2 tools.csv file.csv
  
 Will generate 4 files:
 - `tools.en.json`
@@ -44,13 +44,13 @@ Will generate 4 files:
 
 Wildcard can also be used in path
 
-    i18ncsv2json *.csv
+    i18ncsv2json-2 *.csv
 
 Output for the same language can be merge together into a single file with the `merge` option.
  
 Execute following command:
  
-    i18ncsv2json tools.csv file.csv --merge
+    i18ncsv2json-2 tools.csv file.csv --merge
  
 Will generate 2 files:
 - `en.json`
@@ -58,24 +58,28 @@ Will generate 2 files:
 
 ### Field delimiter
  
- If you are working with English locale, the field delimiter in csv files is the `,` character. But for other locales (e.g. french) the `;` character is used. You can adapt the csv field delimiter with the `fieldDelimiter` option.
+ If you are working with English locale, the field delimiter in csv files is the `,` character. But for other 
+ locales (e.g. french) the `;` character is used. You can adapt the csv field delimiter with the `fieldDelimiter` 
+ option.
 
  Example command to use semicolon:
 
-     i18ncsv2json directory -f ";"
+     i18ncsv2json-2 directory -f ";"
 
 ### Encoding
  
- It is possible to choose the encodings (for source csv files and output json files). This can typically be usefull when managing the csv files via excel which by default saves the file in windows specific encoding and not utf-8. Default output encoding is utf8.
+ It is possible to choose the encodings (for source csv files and output json files). This can typically be usefull 
+ when managing the csv files via excel which by default saves the file in windows specific encoding and not utf-8. 
+ Default output encoding is utf8.
  
  Example command to use read csv file with Windows encoding and output it in utf16 :
  
-     i18ncsv2json directory -r latin1 -w utf16
+     i18ncsv2json-2 directory -r latin1 -w utf16
  
 Usage
 -----
 
-    i18ncsv2json [options] <files  ...>
+    i18ncsv2json-2 [options] <files  ...>
 
 Options: 
 
