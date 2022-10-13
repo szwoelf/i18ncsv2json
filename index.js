@@ -51,7 +51,7 @@ program.args.forEach((arg) => {
         process.exit(1);
       }
 
-      parse(content, parseOptions, function (err, trans) {
+      parse.parse(content, parseOptions, function (err, trans) {
         if (program.transpose) {
           trans = require("lodash-transpose").transpose(trans);
         }
